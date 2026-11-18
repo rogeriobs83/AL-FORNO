@@ -1,0 +1,69 @@
+@import "../../../styles/variables.scss";
+
+/* Reviews section */
+.review {
+  padding: 4rem 0;
+  background-color: $background-secondary;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.reviews {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.3rem;
+  justify-content: center;
+}
+
+/* Review cards */
+.reviewCard {
+  box-sizing: border-box;
+  background-color: $background-secondary;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+  position: relative;
+}
+
+.reviewCard:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.reviewCard:last-child,
+.reviewCard:first-child,
+.reviewCard:nth-child(2) {
+  margin-bottom: 0;
+  border: 1px solid rgba($color: #000000, $alpha: 0.3);
+}
+
+.reviewCard p {
+  margin: 0 0 0.5rem;
+  margin-bottom: 1rem;
+}
+.reviewer {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.reviewer span {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: $text-primary;
+}

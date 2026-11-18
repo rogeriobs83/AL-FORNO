@@ -1,0 +1,144 @@
+@import '../../styles/variables.scss';
+
+/* Navigation layout */
+.container {
+  position: relative;
+}
+.navbar {
+  margin: 10px;
+  width: 100%;
+  background: none;
+  color: black;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.navList li {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color:#8b1b1b;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  border-radius: 4px;
+  z-index: 1;
+  text-align: left;
+}
+
+.navList li:hover .dropdown {
+  display: block;
+}
+
+.navList {
+  top: 100%;
+  left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #8b1b1b;
+}
+
+.navbar li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar li:hover {
+  color: #333;
+}
+
+/* Reservation link */
+.mobile a {
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.mobile a:hover {
+  background-color: $color-green;
+}
+
+.reservation {
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.reservation:hover {
+  background-color: $color-green;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  .navbar .mobile {
+    display: flex;
+  }
+
+  .navbar {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .navbar.open {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0;
+  }
+
+  .navbar.open .navList {
+    position: static;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+}

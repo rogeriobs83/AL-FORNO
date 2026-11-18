@@ -1,0 +1,80 @@
+@import '../../styles/variables.scss';
+
+/* Menu toggle */
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 26px;
+  padding: 2px;
+}
+
+.btnLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4px;
+  width: 100%;
+  background-color: $color-red;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.btnLine::before,
+.btnLine::after {
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4px;
+  width: 100%;
+  background-color: $color-red;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.btnLine::before {
+  top: -8px;
+
+}
+
+.btnLine::after {
+  bottom: -8px;
+}
+
+
+/* Open state */
+.btn.open .btnLine {
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn.open .btnLine::before {
+  top: 0;
+  transform: rotate(45deg) ;
+  
+}
+
+.btn.open .btnLine::after {
+  top: 0;
+  transform: rotate(-45deg);
+  
+}
+
+/* Mobile toggle */
+@media (max-width: 768px) {
+  .btn {
+    display: flex;
+    border: none;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1001;
+  }
+}

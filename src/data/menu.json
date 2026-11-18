@@ -1,0 +1,140 @@
+{
+    "sections": [  
+        {  
+            "name": "Stuzzichini (Appetizers)",
+            "items": [
+                { "name": "Cestino di Pane", "image": "/placeholder.jpeg", "tags": ["VG"], "price": "£4.25", "description": "A basket of homemade bread.", "nameClass": "osco" },
+                { "name": "Olive Siciliane", "image": "/placeholder.jpeg", "tags": ["VG", "GF"], "price": "£4.50", "description": "Marinated Sicilian green & black olives." },
+                { "name": "Panpizza all’Aglio", "image": "/placeholder.jpeg", "tags": ["VG"], "price": "£6.50", "description": "Oven-baked garlic pizza bread." },
+                { "name": "Panpizza con Pesto", "image": "/placeholder.jpeg", "tags": ["VG"], "price": "£7.95", "description": "Oven-baked garlic pizza bread topped with pesto." },
+                { "name": "Panpizza all’Aglio e Mozzarella", "image": "/placeholder.jpeg", "tags": ["V"], "price": "£9.00", "description": "Oven-baked garlic pizza bread with mozzarella." },
+                { "name": "Panpizza Tricolore", "image": "/placeholder.jpeg", "tags": ["V"], "price": "£9.95", "description": "Oven-baked garlic bread with mozzarella, garlic, tomato and pesto sauce." },
+                { "name": "Marinara", "image": "/placeholder.jpeg", "tags": ["VG"], "price": "£7.95", "description": "Oven-baked garlic bread with tomato sauce." }
+            ]
+        },
+        {
+            "name": "Antipasti (Starters)",
+            "items": [
+                { "name": "Zuppa del Giorno", "image": "/placeholder.jpeg", "price": "£6.95", "description": "Fresh homemade soup of the day.", "nameClass": "osco" },
+                { "name": "Cocktail di Gamberetti", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£9.95", "description": "Peeled prawns topped with our homemade cocktail sauce, served on a bed of mixed leaves." },
+                { "name": "Formaggio Fritto", "image": "/placeholder.jpeg", "price": "£10.50", "description": "Deep-fried breaded goat cheese served with homemade chilli jam on a bed of mixed leaves." },
+                { "name": "Cozze al Vino", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£10.50", "description": "Fresh mussels cooked with white wine and parsley." },
+                { "name": "Cozze al Pomodoro", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£10.50", "description": "Fresh mussels cooked with garlic, onions, tomato sauce and mixed herbs." },
+                { "name": "Fegatini di Pollo", "image": "/placeholder.jpeg", "price": "£9.95", "description": "Pan-fried chicken livers with garlic, rosemary, and white wine, drizzled with balsamic vinegar and served on a bed of mixed leaves, paired with two slices of garlic bread." },
+                { "name": "Búfala e Crudo", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£10.95", "description": "Fresh buffalo mozzarella with Parma ham and cherry tomatoes served on a bed of rocket." },
+                { "name": "Melanzane alla Parmigiana", "image": "/placeholder.jpeg", "price": "£9.95", "description": "Oven-baked layers of pan-fried aubergine with parmesan and mozzarella in fresh tomato sauce." },
+                { "name": "Caprese di Bufala", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£10.00", "description": "Fresh buffalo mozzarella and tomatoes, drizzled with olive oil and basil, served on a bed of rocket." },
+                { "name": "Funghi e Spinaci Gratinati", "image": "/placeholder.jpeg", "tags": ["VG"], "price": "£10.50", "description": "Oven-baked mushrooms, spinach, garlic, mixed herbs, béchamel and tomato sauce topped with mozzarella." },
+                { "name": "Bruschetta al Pomodoro", "image": "/placeholder.jpeg", "tags": ["VG"], "price": "£8.85", "description": "Toasted bread topped with fresh tomatoes, garlic, basil and olive oil served on a bed of mixed leaves." },
+                { "name": "Calamari Fritti", "image": "/placeholder.jpeg", "price": "£10.50", "description": "Deep-fried squid rings served with homemade fresh tartar sauce." },
+                { "name": "Sardine alla Griglia", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£10.50", "description": "Grilled fresh sardines drizzled with garlic and olive oil." },
+                { "name": "Caldo Siciliano", "image": "/placeholder.jpeg", "price": "£10.95", "description": "Selection of deep-fried traditional Sicilian street food appetisers." },
+                { "name": "Tagliere di Salumi", "image": "/placeholder.jpeg", "price": "£10.95", "description": "Selection of Italian cured meat, marinated olives, and Sicilian cheese served with garlic bread." }
+            ]
+        },
+        {
+            "name": "Pasta",
+            "items": [
+                { "name": "Lasagna", "image": "/placeholder.jpeg", "price": "£14.95", "description": "Oven-baked traditional layers of pasta with minced beef, parmesan, mozzarella, béchamel and tomato sauce.", "nameClass": "osco" },
+                { "name": "Penne Amatriciana", "image": "/placeholder.jpeg", "price": "£13.95", "description": "Pasta with bacon, onions, and tomato sauce." },
+                { "name": "Penne Salsiccia", "image": "/placeholder.jpeg", "price": "£14.50", "description": "Pasta with slow-cooked Sicilian sausage in tomato sauce." },
+                { "name": "Spaghetti Carbonara", "image": "/placeholder.jpeg", "price": "£14.50", "description": "Pasta with pancetta, smoked bacon, egg, parmesan, and cream." },
+                { "name": "Spaghetti Bolognese", "image": "/placeholder.jpeg", "price": "£14.50", "description": "Pasta with slowly braised minced beef in tomato sauce." },
+                { "name": "Penne alla Norma", "image": "/placeholder.jpeg", "tags": ["V"], "price": "£13.50", "description": "Pasta with aubergine, garlic, tomato sauce, topped with Sicilian salted ricotta." },
+                { "name": "Penne Arrabiata", "image": "/placeholder.jpeg", "tags": ["VG"], "price": "£12.50", "description": "Pasta with garlic, chilli and tomato sauce." },
+                { "name": "Tagliatelle Funghi", "image": "/placeholder.jpeg", "price": "£15.95", "description": "Fresh egg pasta with mushrooms, parmesan and cream." },
+                { "name": "Tagliatelle Salsiccia e Funghi", "image": "/placeholder.jpeg", "price": "£16.95", "description": "Fresh egg pasta with Sicilian sausage, mushrooms, a touch of tomato, parsley and olive oil." },
+                { "name": "Spaghetti allo Scoglio", "image": "/placeholder.jpeg", "price": "£21.00", "description": "Pasta with fresh mussels, squid, and king prawns, cooked with a touch of tomato sauce, garlic, and olive oil." },
+                { "name": "Tagliatelle al Gambero", "image": "/placeholder.jpeg", "price": "£21.00", "description": "Fresh egg pasta with a touch of tomato sauce, king prawns, cherry tomatoes, parsley and olive oil." },
+                { "name": "Risotto Mare", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£21.95", "description": "Risotto with mussels, squid, prawns and tomato sauce." },
+                { "name": "Risotto con Funghi", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£18.00", "description": "Risotto with mushrooms, parmesan and cream." },
+                { "name": "Risotto Salsiccia", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£20.00", "description": "Risotto with Sicilian sausage, fennel seeds, smoked mozzarella, parmesan and a touch of cream." }
+            ],
+            "notes": ["Penne and spaghetti pasta are available gluten-free for an additional £2.50."]
+        },
+        {
+            "name": "Meat",
+            "items": [
+                { "name": "Stinco di Agnello Arrosto", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£20.50", "description": "Roasted lamb shank with homemade gravy, served with sautéed potatoes.", "nameClass": "osco" },
+                { "name": "Agnello alla Griglia", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£19.95", "description": "Grilled leg of lamb steak served with sautéed potatoes." },
+                { "name": "Cotoletta alla Milanese", "image": "/placeholder.jpeg", "price": "£20.95", "description": "Pan-fried breaded veal escalope served with spaghetti in tomato sauce." },
+                { "name": "Saltimbocca alla Romana", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£20.95", "description": "Pan-fried veal topped with Parma ham and sage in homemade gravy sauce, served with sautéed potatoes." },
+                { "name": "Scaloppine ai Funghi", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£18.95", "description": "Pan-fried veal with mushrooms in truffle oil and cream sauce, served with sautéed potatoes." },
+                { "name": "Scaloppine al Limone", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£18.95", "description": "Pan-fried veal with lemon sauce, served with sautéed potatoes." },
+                { "name": "Pollo ai Funghi e Spinaci", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£15.95", "description": "Grilled chicken breast with spinach and mushrooms in cream sauce, served with sautéed potatoes." },
+                { "name": "Pollo alla Loggia", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£17.95", "description": "Grilled chicken breast with asparagus, peppers and onions, topped with mozzarella in gravy sauce, served with sautéed potatoes." },
+                { "name": "Pollo Panato", "image": "/placeholder.jpeg", "price": "£14.25", "description": "Pan-fried breaded chicken breast, served with chips." },
+                { "name": "Salsiccia al Sugo", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£17.45", "description": "A stew of Sicilian sausage with fennel seeds, cannellini beans, and potatoes in garlic, chilli, and tomato sauce." },
+                { "name": "Bistecca alla Griglia", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£23.95", "description": "Grilled sirloin steak, served with sautéed potatoes." }
+            ]
+        },
+        {
+            "name": "Steak Sauces",
+            "items": [
+                { "name": "Diana", "image": "/placeholder.jpeg", "price": "£4.25", "description": "Mushrooms, onions, mustard, brandy and homemade gravy sauce.", "nameClass": "osco" },
+                { "name": "Al Pepe", "image": "/placeholder.jpeg", "price": "£3.75", "description": "Peppercorns and homemade gravy sauce." },
+                { "name": "Al Gorgonzola", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£3.75", "description": "Gorgonzola cheese and cream sauce." }
+            ]
+        },
+        {
+            "name": "Pesce (Fish)",
+            "items": [
+                { "name": "Filetto di Spigola", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£20.95", "description": "Grilled fillet of sea bass with garlic, white wine, olive oil and cherry tomato sauce, served with sautéed potatoes.", "nameClass": "osco" },
+                { "name": "Salmone al Cartoccio", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£20.95", "description": "Oven-baked fresh salmon topped with cherry tomatoes, garlic, peppers, onions, and black olives served with sautéed potatoes." },
+                { "name": "Gamberoni all’Aglio (6)", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£20.95", "description": "Pan-fried king prawns with white wine, garlic, and butter, served with sautéed potatoes." },
+                { "name": "Gamberoni Arrabiata (6)", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£20.95", "description": "Pan-fried king prawns with chilli, garlic and tomato sauce, served with sautéed potatoes." },
+                { "name": "Calamari Fritti", "image": "/placeholder.jpeg", "price": "£19.95", "description": "Deep-fried squid rings served with homemade fresh tartar sauce and sautéed potatoes." },
+                { "name": "Sardine alla Griglia", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£16.95", "description": "Grilled fresh sardines drizzled with garlic and olive oil, served with sautéed potatoes." },
+                { "name": "Cozze al Vino", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£19.50", "description": "Fresh mussels cooked with white wine and parsley, with a side of sautéed potatoes." },
+                { "name": "Cozze al Pomodoro", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£19.50", "description": "Fresh mussels cooked with garlic, onions, tomato sauce and mixed herbs, with a side of sautéed potatoes." }
+            ],
+            "allergyNotice": "Our dishes may contain traces of allergens. Fish dishes may contain bones. Please warn staff of any allergies or any other concerns."
+        },
+        {
+            "name": "Pizza",
+            "sizes": ["Small", "Medium", "Large"],
+            "items": [
+                { "name": "Margherita", "image": "/placeholder.jpeg", "tags": ["V"], "prices": ["£11.25", "£17.50", "£25.95"], "description": "Tomato sauce and mozzarella.", "nameClass": "osco" },
+                { "name": "Diavola", "image": "/placeholder.jpeg", "prices": ["£12.95", "£21.50", "£28.95"], "description": "Tomato sauce, mozzarella and spicy salami." },
+                { "name": "Napoli", "image": "/placeholder.jpeg", "prices": ["£13.25", "£21.95", "£27.95"], "description": "Tomato sauce, mozzarella, anchovies, capers and olives." },
+                { "name": "Siciliana", "image": "/placeholder.jpeg", "prices": ["£13.50", "£21.95", "£28.95"], "description": "Tomato sauce, buffalo mozzarella, and aubergine topped with Sicilian salty ricotta." },
+                { "name": "Prosciutto Rucola", "image": "/placeholder.jpeg", "prices": ["£15.25", "£24.95", "£31.50"], "description": "Tomato sauce, mozzarella, rocket, Parma ham and parmesan shavings." },
+                { "name": "Europea", "image": "/placeholder.jpeg", "prices": ["£13.25", "£21.50", "£28.95"], "description": "Tomato sauce, mozzarella, frankfurters and chips." },
+                { "name": "Sferracavallo", "image": "/placeholder.jpeg", "prices": ["£16.50", "£25.95", "£33.95"], "description": "Tomato sauce, mozzarella, squid, king prawns and mussels." },
+                { "name": "Capricciosa", "image": "/placeholder.jpeg", "prices": ["£14.50", "£23.95", "£29.95"], "description": "Tomato sauce, mozzarella, spicy salami, mushrooms, ham, artichokes and olives." },
+                { "name": "Vegetariana", "image": "/placeholder.jpeg", "tags": ["V"], "prices": ["£14.50", "£23.95", "£28.95"], "description": "Tomato sauce, mozzarella, aubergine, zucchini, mushrooms, peppers, artichokes and olives." },
+                { "name": "Salsiccia e Melanzane", "image": "/placeholder.jpeg", "prices": ["£15.25", "£24.95", "£31.50"], "description": "Tomato sauce, buffalo mozzarella, Sicilian sausage and aubergine." },
+                { "name": "Calzone (Folded Pizza)", "image": "/placeholder.jpeg", "prices": ["£14.25", "£23.95", "£29.95"], "description": "Tomato sauce, mozzarella, ham and mushrooms." },
+                { "name": "Prosciutto Funghi", "image": "/placeholder.jpeg", "prices": ["£13.50", "£22.00", "£28.95"], "description": "Tomato sauce, mozzarella, Parma ham and mushrooms." },
+                { "name": "Bufala e Crudo", "image": "/placeholder.jpeg", "prices": ["£14.50", "£24.95", "£31.50"], "description": "Tomato sauce, buffalo mozzarella and Parma ham." },
+                { "name": "Tonno e Cipolla", "image": "/placeholder.jpeg", "prices": ["£14.25", "£23.95", "£29.95"], "description": "Tomato sauce, mozzarella, tuna and onions." },
+                { "name": "Al Pollo", "image": "/placeholder.jpeg", "prices": ["£15.25", "£24.95", "£31.50"], "description": "Tomato sauce, mozzarella, grilled chicken breast, jalapenos." },
+                { "name": "Quattro Formaggi", "image": "/placeholder.jpeg", "prices": ["£13.95", "£21.95", "£29.50"], "description": "Mozzarella, Brie, Parmesan, and Gorgonzola cheese." },
+                { "name": "Faccia di Vecchia", "image": "/placeholder.jpeg", "prices": ["£14.50", "£23.95", "£29.95"], "description": "Mozzarella, Sicilian olives with stone, cherry tomatoes, anchovies and parmesan cheese." },
+                { "name": "Rustica", "image": "/placeholder.jpeg", "prices": ["£14.25", "£23.95", "£29.95"], "description": "Mozzarella, Sicilian olives with stone, spicy salami, cherry tomatoes and parmesan cheese." }
+            ],
+            "notes": ["Small pizzas serve 1; medium pizzas serve 2; large pizzas serve 3.", "All small pizzas are available on a gluten-free base for an additional £2.50.", "Vegan cheese available from £2.30+.", "Extras: small £2.50, medium £3.50, large £4.50."]
+        },
+        {
+            "name": "Insalatone (Main Course Salad)",
+            "items": [
+                { "name": "Insalata di Pollo", "image": "/placeholder.jpeg", "price": "£15.95", "description": "A selection of green leaves, grilled chicken breast, crispy bacon, shaved Parmesan, and croutons with olive oil.", "nameClass": "osco" },
+                { "name": "Insalata Italiana", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£11.95", "description": "Selection of green leaves, rocket, cherry tomatoes, buffalo mozzarella, basil and olive oil." }
+            ]
+        },
+        {
+            "name": "Contorno (Side Dishes)",
+            "items": [
+                { "name": "Insalata Mista", "image": "/placeholder.jpeg", "price": "£5.95", "description": "Selection of green leaves, tomatoes, olives, cucumber, carrot, onions, and sweet peppers with homemade dressing.", "nameClass": "osco" },
+                { "name": "Insalata Pomodoro e Cipolla", "image": "/placeholder.jpeg", "tags": ["GF", "VG"], "price": "£5.95", "description": "Fresh tomatoes, red onions, Sicilian olives (with stones), oregano, and olive oil." },
+                { "name": "Insalata di Rucola", "image": "/placeholder.jpeg", "tags": ["GF"], "price": "£6.95", "description": "Rocket, tomatoes and parmesan shavings in olive oil." },
+                { "name": "Insalata Verde", "image": "/placeholder.jpeg", "tags": ["GF", "VG"], "price": "£6.95", "description": "Selection of green leaves, cucumber, olives, and green peppers in olive oil." },
+                { "name": "Vegetali Misti", "image": "/placeholder.jpeg", "tags": ["GF", "VG"], "price": "£5.50", "description": "Selection of steamed vegetables." },
+                { "name": "Spinaci all’Aglio", "image": "/placeholder.jpeg", "tags": ["GF", "VG"], "price": "£6.50", "description": "Sautéed fresh spinach with garlic and olive oil." },
+                { "name": "Riso, Chips, Patate", "image": "/placeholder.jpeg", "tags": ["GF", "VG"], "price": "£4.50", "description": "Rice, chips or sautéed potatoes." }
+            ]
+        }
+    ],
+    "allergyNotice": "Our dishes may contain traces of allergens. Please warn staff of any allergies.",
+    "dietaryKey": { "VG": "Vegan", "V": "Vegetarian", "GF": "Gluten-free" }
+}
