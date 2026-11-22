@@ -23,10 +23,10 @@ export function Header() {
       <div className={Styles.container}>
         <div className={Styles.brand}>
           <img src="/Logo.svg" alt="" />
-          <div className={Styles.text}>
+          {/* <div className={Styles.text}>
           <h3>AL FORNO - PUTNEY</h3>
           <p>Authentic Sicilian Cuisine</p>
-          </div>
+          </div> */}
         </div>
         <Navbar />
       </div>

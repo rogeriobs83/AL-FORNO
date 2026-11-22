@@ -1,84 +1,98 @@
-import { useState } from 'react'
-import Style from './menuSlide.module.scss'
-import {Button} from '../../components/button/button'
-
-const slides = [
-  { image: '/PDF/1.svg', caption: 'Caption One' },
-  { image: '/PDF/2.svg', caption: 'Caption Two' },
-  { image: '/PDF/3.svg', caption: 'Caption Three' },
-  { image: '/PDF/4.svg', caption: 'Caption Four' },
-  { image: '/PDF/5.svg', caption: 'Caption Five' },
-  { image: '/PDF/6.svg', caption: 'Caption Six' },
-  { image: '/PDF/7.svg', caption: 'Caption Seven' },
-  { image: '/PDF/8.svg', caption: 'Caption Eight' },
-  { image: '/PDF/PENNE.pdf', caption: 'Caption Nine' }
-]
-
-
+import Style from "./menuSlide.module.scss";
+import { useEffect, useRef } from "react";
 const menuSlide = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const emblaRef = useRef<HTMLDivElement>(null);
 
-  function showSlide(index: number): void {
-    setCurrentIndex((index + slides.length) % slides.length)
-  }
+  const goToPrev = () =>
+    emblaRef.current?.scrollBy({ left: -emblaRef.current.clientWidth, behavior: "smooth" });
+  const goToNext = () =>
+    emblaRef.current?.scrollBy({ left: emblaRef.current.clientWidth, behavior: "smooth" });
 
-  function changeSlide(offset: number): void {
-    showSlide(currentIndex + offset)
-  }
+  useEffect(() => {
+    const carousel = emblaRef.current;
+    if (!carousel) return;
 
+    const autoplay = window.setInterval(() => {
+      const atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 1;
+      carousel.scrollTo({ left: atEnd ? 0 : carousel.scrollLeft + carousel.clientWidth, behavior: "smooth" });
+    }, 5000);
+
+    return () => window.clearInterval(autoplay);
+  }, []);
   return (
-    <>
-      
-      <div className={Style['slideshow-container']}>
-        
-        {slides.map((slide, index) => (
-          <div
-            key={slide.image}
-            className={`${Style.mySlides} ${Style.fade}`}
-            hidden={index !== currentIndex}
-          >
-            <div className={Style.numbertext}>
-              {index + 1} / {slides.length}
-            </div>
-            <img src={slide.image} alt={slide.caption} />
-            <div className={Style.text}>{slide.caption}</div>
+    <div className={Style.embla} ref={emblaRef} style={{ overflowX: "auto", scrollSnapType: "x mandatory" }}>
+      <div className={Style.embla__container} style={{ display: "flex" }}>
+        <div className={Style.embla__slide} style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
+          <div className={Style.logoContainer}>
+            <img src="/A-logo.png" alt="Al Forno Logo" className={Style.logo} />
           </div>
-        ))}
-
-        <button
-          className={Style.prev}
-          type="button"
-          onClick={() => changeSlide(-1)}
-          aria-label="Previous slide"
-        >
-          ❮
-        </button>
-        <button
-          className={Style.next}
-          type="button"
-          onClick={() => changeSlide(1)}
-          aria-label="Next slide"
-        >
-          ❯
-        </button>
-      </div>
-
-      <div className={Style.dots} aria-label="Choose a slide">
-        {slides.map((slide, index) => (
-          <button
-            key={slide.image}
-            className={`${Style.dot} ${index === currentIndex ? Style.active : ''}`}
-            type="button"
-            onClick={() => showSlide(index)}
-            aria-label={`Go to slide ${index + 1}`}
-            aria-current={index === currentIndex ? 'true' : undefined}
+          <img
+            src="/italian(1).png"
+            alt="Menu item"
+            className={Style.image_1}
           />
-        ))}
+          <img
+            src="/Gallery/gallery (5).jpeg"
+            alt="Menu item"
+            className={Style.image_2}
+          />
+          <img
+            src="/Gallery/gallery (6).jpeg"
+            alt="Menu item"
+            className={Style.image_3}
+          />
+          <div className={Style.text}>
+            <h1 className={Style.title}>Welcome to Al Forno-Putney</h1>
+            <p className={Style.description}>
+              Al Forno is an authentic Italian restaurant dedicated to bringing
+              the true flavors of Italy to every table. We proudly serve freshly
+              prepared dishes, from traditional pasta and stone-baked pizzas to
+              delicious desserts. Our warm atmosphere and passion for quality
+              ingredients create a memorable dining experience for every guest.
+              Taste Italy, one plate at a time. 🇮🇹🍕🍝
+            </p>
+            <button type="button" className="embla__prev" onClick={goToPrev}>
+              Scroll to prev
+            </button>
+            <button type="button" className="embla__next" onClick={goToNext}>
+              Scroll to next
+            </button>
+          </div>
+        </div>
+        <div className={Style.embla__slide} style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
+          <div className={Style.logoContainer}>
+            <img src="/A-logo.png" alt="Al Forno Logo" className={Style.logo} />
+          </div>
+          <img
+            src="/italian(1).png"
+            alt="Menu item"
+            className={Style.image_1}
+          />
+          <img
+            src="/Gallery/gallery (5).jpeg"
+            alt="Menu item"
+            className={Style.image_2}
+          />
+          <img
+            src="/Gallery/gallery (6).jpeg"
+            alt="Menu item"
+            className={Style.image_3}
+          />
+          <div className={Style.text}>
+            <h1 className={Style.title}>Welcome to Al Forno-Putney</h1>
+            <p className={Style.description}>
+              Al Forno is an authentic Italian restaurant dedicated to bringing
+              the true flavors of Italy to every table. We proudly serve freshly
+              prepared dishes, from traditional pasta and stone-baked pizzas to
+              delicious desserts. Our warm atmosphere and passion for quality
+              ingredients create a memorable dining experience for every guest.
+              Taste Italy, one plate at a time. 🇮🇹🍕🍝
+            </p>
+          </div>
+        </div>
       </div>
-      <Button href="/menu">View Menu</Button>
-      
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default menuSlide
+export default menuSlide;

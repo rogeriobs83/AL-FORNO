@@ -1,19 +1,55 @@
 
+import { useState, useEffect } from 'react';
 import Styles from './galeria.module.scss';
 import Slide from '../../components/slide/slide';
 
-// Example gallery data
-const galleryItems = [
-  { id: 1, title: 'Special Dish', category: 'Dishes', imageUrl: 'https://picsum.photos/500/500?random=1' },
-  { id: 2, title: 'Indoor Ambiance', category: 'Ambiance', imageUrl: 'https://picsum.photos/500/500?random=2' },
-  { id: 3, title: 'House Dessert', category: 'Desserts', imageUrl: 'https://picsum.photos/500/500?random=3' },
-  { id: 4, title: 'Exclusive Cocktail', category: 'Drinks', imageUrl: 'https://picsum.photos/500/500?random=4' },
-  { id: 5, title: 'Handmade Pasta', category: 'Dishes', imageUrl: 'https://picsum.photos/500/500?random=5' },
-  { id: 6, title: 'Our Terrace', category: 'Ambiance', imageUrl: 'https://picsum.photos/500/500?random=6' },
-  { id: 7, title: 'House Wine', category: 'Drinks', imageUrl: 'https://picsum.photos/500/500?random=7' }
-];
+const images = import.meta.glob<string>(
+  '../../assets/Gallery/*.{jpg,jpeg,png,webp}',
+  {
+    import: 'default',
+  }
+);
 
 export default function Galeria() {
+  const [galleryItems, setGalleryItems] = useState<Array<{
+    id: number;
+    title: string;
+    category: string;
+    imageUrl: string;
+    path: string;
+  }>>([]);
+
+  useEffect(() => {
+    const loadGalleryImages = async () => {
+      try {
+        const entries = Object.entries(images);
+        console.log('Found images:', entries.length);
+        
+        const resolvedImages = await Promise.all(
+          entries.map(async ([path, imageModule]) => {
+            const imageUrl = await (imageModule as () => Promise<string>)();
+            return { path, imageUrl };
+          })
+        );
+
+        const items = resolvedImages.map(({ path, imageUrl }, index) => ({
+          id: index + 1,
+          title: `Gallery Image ${index + 1}`,
+          category: 'Gallery',
+          imageUrl,
+          path,
+        }));
+
+        setGalleryItems(items);
+        console.log('Gallery images loaded:', items.length);
+      } catch (error) {
+        console.error('Error loading gallery images:', error);
+      }
+    };
+
+    loadGalleryImages();
+  }, []);
+
   return (
     <div className={Styles.container}>
       <header className={Styles.header}>
@@ -25,13 +61,13 @@ export default function Galeria() {
         {galleryItems.map((item) => (
           <div key={item.id} className={Styles.card}>
             <img src={item.imageUrl} alt={item.title} className={Styles.image} />
+
             <div className={Styles.overlay}>
               <span className={Styles.category}>{item.category}</span>
               <h3>{item.title}</h3>
             </div>
             <Slide />
           </div>
-          
         ))}
       </div>
     </div>

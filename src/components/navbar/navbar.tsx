@@ -16,13 +16,12 @@ export function Navbar() {
           <li>
             <a href="/">Home</a>
           </li>
-          <li>
-            Menu
-            <ul className={styles.dropdown}>
-              <li><a href="/menu" onClick={() => setOpen(false)}>Menu</a></li>
-              <li><a href="/christmas-menu" onClick={() => setOpen(false)}>Christmas</a></li>
-              <li><a href="/drinks" onClick={() => setOpen(false)}>Drinks</a></li>
-            </ul>
+          <li>Menu
+            <details className={styles.dropdown}>
+              <summary><a href="/menu" onClick={() => setOpen(false)}>Menu</a></summary>
+              <summary><a href="/christmas-menu" onClick={() => setOpen(false)}>Christmas</a></summary>
+              <summary><a href="/drinks" onClick={() => setOpen(false)}>Drinks</a></summary>
+            </details>
           </li>
           <li>
             <a href="/gallery" onClick={() => setOpen(false)}>Gallery</a>
