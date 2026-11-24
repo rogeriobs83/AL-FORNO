@@ -39,15 +39,29 @@
     border-radius: 6px;
      
   }
-}
+} 
 
 @media (max-width: 768px) {
-  .embla__slide img {
-    width: 100%;
-    aspect-ratio: 4/5;
-    border-radius: 4px;
-    gap: 20px;
+  .embla__container {
+    display: none;
+    justify-content: flex-start;
+    gap: 0;
     padding: 0;
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+  }
+
+  .embla__slide img {
+    display: block;
+    width: 50%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 4px;
+    padding: 0;
+    gap: 0;
   }
 }
 

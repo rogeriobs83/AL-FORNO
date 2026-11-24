@@ -31,7 +31,7 @@
 /* Offer cards */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
   gap: 2rem;
 }
 
@@ -119,18 +119,19 @@
 }
 
 .priceContainer {
+  text-align: left;
   display: flex;
   flex-direction: column;
 }
 
 .originalPrice {
-  font-size: 0.85rem;
-  color: #999;
-  text-decoration: line-through;
+  font-size: 1.25rem;
+  color: #27ae60;
+  font-weight: 700;
 }
 
 .discountPrice {
-  font-size: 1.25rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #27ae60;
 }

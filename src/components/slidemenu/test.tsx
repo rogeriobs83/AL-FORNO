@@ -1,17 +1,21 @@
 import "swiper/swiper-bundle.css";
-
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import Styles from "./test.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const TestSwiper = () => {
   return (
-    <Swiper spaceBetween={50} slidesPerView={1}>
-      <SwiperSlide>
-        <img src="/italian(1).png" alt="Menu item" />
+    <Swiper className={Styles.swiper}
+      spaceBetween={50}
+      slidesPerView={1}
+      >
+      <SwiperSlide className={Styles.slide}>
+        <img src="/Gallery/gallery (4).jpeg" alt="Menu item" />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className={Styles.slide}>
         <img src="/Gallery/gallery (5).jpeg" alt="Menu item" />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className={Styles.slide}>
         <img src="/Gallery/gallery (6).jpeg" alt="Menu item" />
       </SwiperSlide>
     </Swiper>

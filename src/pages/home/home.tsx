@@ -6,8 +6,8 @@ import { Contact } from "./components/contact";
 import { Times } from "./components/review";
 import Social from "./components/social";
 import styles from "./home.module.scss";
-import Slide from "../../components/slide/slide";
 import { Button } from "../../components/button/button";
+import Special from "./components/special";
 import { ReservationModal } from "../../components/reservation-modal/reservation-modal";
 
 interface HomeProps {
@@ -27,7 +27,7 @@ export const Home: FunctionalComponent<HomeProps> = () => {
           imageSrc="/Sombra.svg"
           imageAlt="Imagem do resturante"
         />
-        <Slide />
+        <Special />
         <Times />
         <Contact />
         <Social />

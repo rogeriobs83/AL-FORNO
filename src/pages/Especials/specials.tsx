@@ -1,5 +1,5 @@
 import type { FunctionalComponent } from 'preact';
-import Special from './components/special';
+import Special from '../home/components/special';
 
 interface SpecialsProps {
   path?: string;
