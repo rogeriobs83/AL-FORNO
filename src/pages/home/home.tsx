@@ -9,6 +9,7 @@ import styles from "./home.module.scss";
 import { Button } from "../../components/button/button";
 import Special from "./components/special";
 import { ReservationModal } from "../../components/reservation-modal/reservation-modal";
+import { ReservationForm } from "../../components/reservation/reservationForm";
 
 interface HomeProps {
   path?: string;
@@ -30,6 +31,7 @@ export const Home: FunctionalComponent<HomeProps> = () => {
         <Special />
         <Times />
         <Contact />
+        <ReservationForm />
         <Social />
       </div>
       {showPopup && (

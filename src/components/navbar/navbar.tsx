@@ -16,12 +16,8 @@ export function Navbar() {
           <li>
             <a href="/">Home</a>
           </li>
-          <li>Menu
-            <details className={styles.dropdown}>
-              <summary><a href="/menu" onClick={() => setOpen(false)}>Menu</a></summary>
-              <summary><a href="/christmas-menu" onClick={() => setOpen(false)}>Christmas</a></summary>
-              <summary><a href="/drinks" onClick={() => setOpen(false)}>Drinks</a></summary>
-            </details>
+          <li>
+            <a href="/menu" onClick={() => setOpen(false)}>Menu</a>
           </li>
           <li>
             <a href="/gallery" onClick={() => setOpen(false)}>Gallery</a>
@@ -30,7 +26,7 @@ export function Navbar() {
             <a href="/events" onClick={() => setOpen(false)}>Events</a>
           </li>
           <li>
-            <a href="/special-offers" onClick={() => setOpen(false)}>Specials Offers</a>
+            <a href="/christmas-menu" onClick={() => setOpen(false)}>Christmas Menu</a>
           </li>
           <li>
             <div onClick={() => setReservationOpen(true)}>

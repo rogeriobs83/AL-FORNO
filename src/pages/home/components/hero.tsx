@@ -3,7 +3,8 @@ import { useEffect, useState } from "preact/hooks";
 
 export function Hero() {
   const heroImages = [
-    "/1.svg",
+    
+    "/1.webp",
     "/4.svg",
     "/7.svg"
   ];
@@ -34,7 +35,8 @@ export function Hero() {
       <div className={styles.description}>
         <h1>Welcome to Al Forno</h1>
         <p>Experience authentic Italian cuisine in the heart of Putney.</p>
-        <a href="#reservation" className={styles.hero__button}>Reserve Now</a>
+        
+        <a href="/" className={styles.hero__button}>Reserve Now</a>
         <a href="#menu" className={styles.hero__button}>View Menu</a>
       </div>
       {slide.images.map((image, layer) => (

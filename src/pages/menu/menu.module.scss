@@ -1,11 +1,9 @@
-
-
+@use '../../styles/variables.scss' as *;
 .container {
   width: 100%;
   max-width: 1200px;
   height: 100%;
   border: #ccc 1px solid;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,17 +11,51 @@
   margin: 0 auto;
 }
 
-.container img {
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  position: relative;
+}
+
+.text {
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+.cards img {
   display: block;
   width: 100%;
   height: 100%;
   border: 0;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+} 
+
+.cards a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $color-primary;
 }
 
 @media (max-width: 768px) {
-  .container img{
+  .cards img {
     height: auto;
   }
 }
-
-

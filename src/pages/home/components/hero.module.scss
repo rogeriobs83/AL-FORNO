@@ -1,3 +1,4 @@
+@use "../../../styles/variables.scss" as *;
 /* Hero layout and video */
   .hero {
     width: 100%;
@@ -24,7 +25,7 @@
       display: inline-block;
       margin: 10px;
       padding: 10px 20px;
-      background-color: #ff4c4c;
+      background-color: $color-primary;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
@@ -39,7 +40,7 @@
       font-size: 2.5rem;
       margin-bottom: 20px;
       font-weight: bold;
-      color: #000;
+      color: $color-primary;
     }
   }
 
@@ -101,7 +102,7 @@
 
   .description h1{
     font-size: 2rem;
-    color: #000;
+    color: $color-primary;
   }
 }
 

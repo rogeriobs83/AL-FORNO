@@ -7,8 +7,15 @@ import { Gallery } from "./pages/gallery/gallery";
 import { Events } from "./pages/events/events"; 
 import SpecialOffers from "./pages/Especials/specials";
 import { Christmas } from "./pages/Christmas/christmas";
+import { PrivacyPolicy } from "./Documents/privacy-policy";
+import { CookieBanner } from "./pages/cookies/cookies";
+import { TermsAndConditions } from "./Documents/terms&condiction";
+
 
 const ChristmasMenuRoute = (_props: { path: string }) => <ChristmasMenu />;
+const PrivacyPolicyRoute = (_props: { path: string }) => <PrivacyPolicy />;
+const CookieBannerRoute = (_props: { path: string }) => <CookieBanner />;
+const TermsAndConditionsRoute = (_props: { path: string }) => <TermsAndConditions />;
 
 export function App() {
   return (
@@ -21,8 +28,11 @@ export function App() {
         <ChristmasMenuRoute path="/christmas-menu" />
         <SpecialOffers path="/special-offers" />
         <Christmas path="/christmas" />
+        <PrivacyPolicyRoute path="/privacy-policy" />
+        <TermsAndConditionsRoute path="/terms-and-conditions" />
 
       </Router>
+        <CookieBannerRoute path="/cookie-banner" />
     </Layout>
   );
 }

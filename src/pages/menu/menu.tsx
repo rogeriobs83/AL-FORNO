@@ -7,18 +7,26 @@ interface MenuProps {
 
 export const Menu: FunctionalComponent<MenuProps> = () => (
   <div className={Styles.container}>
-    {/* <a
-      className={Styles.pdfViewer}
-      href="/PDF/PENNE.pdf"
-      title="Menu em PDF"
-    /> */}
-    <img src="/Menu/1.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
-    <img src="/Menu/2.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
-    <img src="/Menu/3.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
-    <img src="/Menu/4.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
-    <img src="/Menu/5.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
-    <img src="/Menu/6.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
-    <img src="/Menu/7.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
-    <img src="/Menu/8.svg" alt="Menu em PDF" className={Styles.pdfViewer} />
+   <h3>Authentic Cuisine</h3>
+   <h1>AL FORNO PUTNEY</h1>
+   <p>Experience the finest Italian cuisine in the heart of Putney.</p>
+   
+   <div className={Styles.cards}>
+    <img src="/1.webp" alt="" />
+    <div className={Styles.text}>
+      <h2>Main Menu</h2>
+      <p>Discover our carefully curated selection of Italian dishes, crafted with the freshest ingredients.</p>
+      <a href="/MAIN MENU.pdf" target="_blank" rel="noopener noreferrer">View Full Menu</a>
+    </div>
+   </div>
+
+   <div className={Styles.cards}>
+    <img src="/2.webp" alt="" />
+    <div className={Styles.text}>
+      <h2>Desserts</h2>
+      <p>Indulge in our delectable Italian desserts, made to perfection.</p>
+      <a href="dolci.pdf" target="_blank" rel="noopener noreferrer">View Full Menu</a>
+    </div>
+   </div>
   </div>
 );
