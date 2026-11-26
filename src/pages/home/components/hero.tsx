@@ -4,7 +4,7 @@ import { useEffect, useState } from "preact/hooks";
 export function Hero() {
   const heroImages = [
     
-    "/1.webp",
+    "/christmas.jpeg",
     "/4.svg",
     "/7.svg"
   ];

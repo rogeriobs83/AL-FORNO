@@ -23,9 +23,6 @@ export function Navbar() {
             <a href="/gallery" onClick={() => setOpen(false)}>Gallery</a>
           </li>
           <li>
-            <a href="/events" onClick={() => setOpen(false)}>Events</a>
-          </li>
-          <li>
             <a href="/christmas-menu" onClick={() => setOpen(false)}>Christmas Menu</a>
           </li>
           <li>

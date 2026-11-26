@@ -2,6 +2,7 @@
 import Styles from './christmas.module.scss';
 import { useState } from 'react';
 
+
 // Menu data sourced from the provided PDF
 const menuData = {
   price: "£49.95 PER PERSON",
@@ -206,6 +207,7 @@ export default function ChristmasMenuApp() {
                         </a>
                       )}
                     </div>
+                    
                     </article>
                   );
                 })}

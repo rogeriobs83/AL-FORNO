@@ -10,12 +10,13 @@ import { Christmas } from "./pages/Christmas/christmas";
 import { PrivacyPolicy } from "./Documents/privacy-policy";
 import { CookieBanner } from "./pages/cookies/cookies";
 import { TermsAndConditions } from "./Documents/terms&condiction";
-
+import { Menu as MenuTest } from "./pages/menu/menutest";
 
 const ChristmasMenuRoute = (_props: { path: string }) => <ChristmasMenu />;
 const PrivacyPolicyRoute = (_props: { path: string }) => <PrivacyPolicy />;
 const CookieBannerRoute = (_props: { path: string }) => <CookieBanner />;
 const TermsAndConditionsRoute = (_props: { path: string }) => <TermsAndConditions />;
+const TestRoute = (_props: { path: string }) => <MenuTest />;
 
 export function App() {
   return (
@@ -30,7 +31,7 @@ export function App() {
         <Christmas path="/christmas" />
         <PrivacyPolicyRoute path="/privacy-policy" />
         <TermsAndConditionsRoute path="/terms-and-conditions" />
-
+        <TestRoute path="/test" />
       </Router>
         <CookieBannerRoute path="/cookie-banner" />
     </Layout>
