@@ -16,8 +16,8 @@
 }
 
 .header h2 {
-  font-size: $title-h2;
-  color: #2c3e50;
+  font-size: $title-h3;
+  color: $color-primary;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -94,5 +94,8 @@
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .header h2 {
+    font-size: $title-h2;
   }
 }
