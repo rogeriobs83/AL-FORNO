@@ -13,21 +13,21 @@ export const Menu: FunctionalComponent<MenuProps> = () => {
       description:
         "Discover our carefully curated selection of Italian dishes, crafted with the freshest ingredients.",
       image: "/1.webp",
-      link: "/MAIN MENU.pdf",
+      link: "/PDF/Al Forno Main Menu.pdf",
     },
     {
       title: "Desserts",
       description:
         "Indulge in our delectable Italian desserts, made to perfection.",
       image: "/2.webp",
-      link: "/dolci.pdf",
+      link: "/PDF/Al Forno Desserts Menu.pdf",
     },
     {
       title: "Drinks & Cocktails",
       description:
         "Quench your thirst with our selection of Italian beverages, from classic wines to refreshing soft drinks.",
       image: "/Capa.webp",
-      link: "/Drink.pdf"
+      link: "/PDF/Al Forno Drinks Menu.pdf"
     }
   ];
   return (

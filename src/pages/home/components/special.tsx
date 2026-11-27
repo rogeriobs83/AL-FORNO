@@ -11,7 +11,7 @@ const specialOffersList = [
     description__1: "Per Person",
     badge: "Ladies Night offer.",
     buttonText: "Learn More",
-    link: "/Ladies Night Menu.pdf",
+    link: "/PDF/Al Forno Ladies Night Menu.pdf",
     imageUrl: "/ladies.avif",
   },
  /*  {
@@ -35,7 +35,7 @@ const specialOffersList = [
     discountPrice: "£18.00",
     badge: "Tuesday Offer",
     buttonText: "Learn More",
-    link: "/TUESDAY (1).pdf",
+    link: "/PDF/Al Forno Tuesday Offer.pdf",
     imageUrl: "/tuesday.avif",
   },
 ];
