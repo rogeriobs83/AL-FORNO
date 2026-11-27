@@ -23,7 +23,7 @@ export function Navbar() {
             <a href="/gallery" onClick={() => setOpen(false)}>Gallery</a>
           </li>
           <li>
-            <a href="/test" onClick={() => setOpen(false)}>Christmas Menu</a>
+            <a href="/christmas-menu" onClick={() => setOpen(false)}>Christmas Menu</a>
           </li>
           <li>
             <div onClick={() => setReservationOpen(true)}>
