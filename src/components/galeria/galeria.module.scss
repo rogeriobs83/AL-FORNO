@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as *;
+
 /* Gallery layout */
 .container {
   max-width: 1200px;
@@ -14,7 +16,7 @@
 }
 
 .header h2 {
-  font-size: 2.2rem;
+  font-size: $title-h2;
   color: #2c3e50;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -84,7 +86,6 @@
 }
 
 .overlay h3 {
-  font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
 }
@@ -93,9 +94,5 @@
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-  
-  .header h2 {
-    font-size: 1.8rem;
   }
 }

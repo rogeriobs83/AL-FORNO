@@ -33,11 +33,11 @@ export function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.description}>
-        <h1>Welcome to Al Forno</h1>
+        <h2>Not Just Pizza. <br /> Al Forno.</h2>
         <p>Experience authentic Italian cuisine in the heart of Putney.</p>
         
-        <a href="/" className={styles.hero__button}>Reserve Now</a>
-        <a href="#menu" className={styles.hero__button}>View Menu</a>
+        <a href="#reservation" className={styles.hero__button}>Reserve Now</a>
+        <a href="/menu" className={styles.hero__button}>View Menu</a>
       </div>
       {slide.images.map((image, layer) => (
         <div

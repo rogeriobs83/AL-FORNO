@@ -5,7 +5,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 4rem 2rem;
-  background-color: $background-secondary;
+  background-color: $background-ash;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -22,35 +22,14 @@
   justify-content: center;
   width: 100%;
   position: relative;
-  border: 1px solid #000;
-  
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    inline-size: 100%;
-    border-bottom: 20px solid $color-green;
-    margin-bottom: 1rem;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    inline-size: 100%;
-    border-top: 20px solid $color-green;
-    margin-top: 1rem;
-  }
+  border: 1px solid rgba(45, 41, 38, 0.3);
+  box-shadow: 0 0 10px rgba(45, 41, 38, 0.3);
+  border-radius: 12px;
 
   h2 {
-   
+    font-size: $title-h3;
+    font-family: $title-family;
     inline-size: 100%;
-    font-size: 2rem;
     margin-bottom: 1rem;
   }
 }
@@ -67,7 +46,7 @@
 
 .socialIcon {
   font-size: 2rem;
-  color: $text-primary;
+  color: $color-primary;
   transition: color 0.3s ease;
 }
 
@@ -88,7 +67,8 @@
   Button {
     inline-size: 100%;
     color: $color-white;
-    border: none;
+    border: 1px solid rgba(45, 41, 38, 0.3);
+    border-radius: 12px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -98,4 +78,15 @@
 
 .socialIcon:hover {
   color: $text-primary;
+}
+
+@media (max-width: 768px) {
+  .social {
+    flex-direction: column;
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: $title-h2;
+    }
+  }
 }

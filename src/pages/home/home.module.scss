@@ -46,15 +46,15 @@
 }
 
 .popup_content h2 {
+  font-size: $title-h3;
   color: #f2f1f1;
-  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .popup_content h3 {
   color: #f2f1f1;
-  font-size: 1.5rem;
+  font-size: $title-h6;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -158,13 +158,6 @@ About {
 
   .popup_content {
     padding: 1rem;
-  }
-
-  .popup_content h2 {
-    font-size: 2rem;
-  }
-  .popup_content h3 {
-    font-size: 1.2rem;
   }
 
   .popup_content p {

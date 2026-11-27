@@ -13,7 +13,7 @@ export default function Social() {
       <p>Stay connected with us for the latest updates and promotions.</p>
       <div className={Styles.socialMedia}>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/alfornoputneyrestaurant"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -21,21 +21,21 @@ export default function Social() {
             <i className={Styles.socialIcon + " fab fa-facebook"}></i>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/alfornoputney?igsh=MWl5cnZ5dHd0a3Y4dA%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
             <i className={Styles.socialIcon + " fab fa-instagram"}></i>
           </a>
-          <a
+          {/* <a
             href="https://www.twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
           >
-            <i className={Styles.socialIcon + " fab fa-twitter"}></i>
-          </a>
+            <i className={Styles.socialIcon + " fab fa-outlook"}></i>
+          </a> */}
         </div>
       </div>
         <div className={Styles.buttons}>

@@ -1,3 +1,5 @@
+@use "../styles/variables.scss" as *;
+
 .privacyPolicy {
   background: #fff;
 	max-width: 860px;
@@ -12,9 +14,7 @@
 	h1 {
 		margin: 0 0 8px;
 		color: #742f24;
-		font-size: clamp(2rem, 5vw, 2.75rem);
 		line-height: 1.2;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 	}
 
 	> p:first-of-type {
@@ -33,9 +33,9 @@
 	}
 
 	h2 {
+		font-size: $title-h2;
 		margin: 0 0 8px;
 		color: #742f24;
-		font-size: 1.35rem;
 		line-height: 1.35;
 	}
 

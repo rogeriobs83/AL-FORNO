@@ -1,118 +1,118 @@
-@import '../../../styles/variables.scss';
+@use "../../../styles/variables.scss" as *;
 
-/* About section layout */
-.sectionContainer {
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
 
-  background-color: $background-primary;
-  padding: 4rem 1.5rem;
+.story {
+  --basil: #1d2b22;
+  --ash: #e9e6df;
+  --ember: #e8662c;
+  --tomato: #b8321f;
+  --moss: #8fa38a;
 
-  @media (min-width: 768px) {
-    padding: 6rem 3rem;
-  }
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: clamp(220px, 60vw, 460px);
-  border-radius: 1rem;
-  object-fit: cover;
-  padding: 0.5rem;
-}
-
-/* About content wrapper */
-.contentWrapper {
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  background: var(--ash);
+  color: var(--basil);
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 6rem);
   align-items: center;
-  gap: 3rem;
-  color: $text-primary;
-
-  @media (min-width: 1024px) {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4rem;
-  }
+  padding: clamp(3rem, 9vw, 8rem) clamp(1.25rem, 6vw, 6rem);
+  font-family: 'Newsreader', Georgia, serif;
 }
 
-/* Text content area */
-.textContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-
-  .title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #8b3f2f;
-    line-height: 1.2;
-  }
-
-  .text {
-    font-size: 1.125rem;
-    color: $text-primary;
-    line-height: 1.6;
-  }
+.story__text {
+  max-width: 100%;
 }
 
-/* About image container */
-.imageContainer {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.story__title {
+  font-size: $title-h2;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0 0 2rem;
+}
+
+.story p {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+
+.story__facts {
+  margin: 2.5rem 0 0;
+  border-left: 3px solid var(--ember);
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.story__facts dt {
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--moss);
+}
+
+.story__facts dd {
+  margin: 0.1rem 0 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Forno em arco, feito só com CSS */
+.story__oven {
   position: relative;
-  display: inline-block;
- 
+  aspect-ratio: 4 / 5;
+  max-width: 26rem;
+  width: 100%;
+  justify-self: center;
+  border-radius: 999px 999px 0.5rem 0.5rem;
+  background: radial-gradient(
+    ellipse at 50% 100%,
+    #ffb457 0%,
+    var(--ember) 35%,
+    var(--tomato) 68%,
+    #5a1a10 100%
+  );
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 0 0.9rem #2b3b30, 0 0 0 1rem var(--moss);
+  overflow: hidden;
+}
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    object-fit: cover;
-    padding: 0.5rem;
+.story__glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 100%,
+    rgba(255, 220, 150, 0.55),
+    transparent 60%
+  );
+  animation: flicker 3.2s ease-in-out infinite;
+}
+
+.story__temp {
+  position: relative;
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(4rem, 12vw, 7rem);
+  letter-spacing: -0.04em;
+  color: #fff4e0;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story__glow { animation: none; }
+}
+
+@media (max-width: 760px) {
+  .story {
+    grid-template-columns: 1fr;
   }
-
-  @media (min-width: 1024px) {
-    justify-content: flex-end;
-  }
-
-  .containerWrapper {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    border: 3px solid #0c0c0c;
-  }
-
-  .contentWrapper {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    border: 30px solid #0c0c0c;
-  }
-
-  .image {
-    display: block;
-    width: 100%;
-    padding: 0rem;
-    border-radius: 1rem;
-    object-fit: cover;
-    
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #0c0c0c;
-    border-radius: 16px;
-    z-index: -1;
+  .story__oven {
+    max-width: 18rem;
+    order: -1;
   }
 }

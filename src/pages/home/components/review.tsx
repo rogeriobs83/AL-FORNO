@@ -3,7 +3,7 @@ import styles from "./review.module.scss";
 export function Times() {
   return (
     <section className={styles.review}>
-      <h2 className={styles.heading}>What Our Customers Say</h2>
+      <h2 className={styles.heading}>What Our Guest Say</h2>
       <div className={styles.reviews}>
         <div className={styles.reviewCard}>
           <p>⭐⭐⭐⭐⭐</p>

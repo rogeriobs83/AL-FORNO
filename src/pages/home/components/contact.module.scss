@@ -28,17 +28,27 @@
 	max-width: 42rem;
 	margin: 0 auto 1.5rem;
 	padding: 1.5rem 1.75rem;
-	border: 1px solid rgba(45, 41, 38, 0.14);
 	border-radius: 0.75rem;
-	background: #fffdf9;
+	background: none;
 	text-align: center;
+  box-shadow: 0 0 3px rgba(45, 41, 38, 0.3);
+  border: 1px solid rgba(45, 41, 38, 0.3);
 
-	h2 {
-		margin: 0 0 1rem;
+
+	 h3 {
+		font-size: $title-h6;
+		line-height: 1.5;
 		color: #8b3f2f;
-		font-size: 1.25rem;
 		font-weight: 600;
 	}
+}
+.fhead {
+  font-size: $title-h5;
+  line-height: 1.5;
+  color: #8b3f2f;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
 
 	dl {
 		display: grid;
@@ -64,8 +74,8 @@
 
 
   h2 {
+    font-size: $title-h3;
     color: #8b3f2f;
-    font-size: clamp(1rem, 4vw, 1.5rem);
     font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
@@ -75,8 +85,9 @@
   .iframe {
     width: 100%;
     height: 450px;
-    border: 3px solid rgba(45, 41, 38, 1);
+    border: 1px solid rgba(45, 41, 38, 0.3);
     border-radius: 0.75rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    iframe {
      width: 100%;
      height: 100%;
@@ -93,8 +104,18 @@
     .iframe {
       width: 100%;
       height: 300px;
-      padding: 1rem;
+      padding: 0rem;
       box-sizing: border-box;
+    }
+    .contact {
+      padding: 1rem;
+    }
+  
+    h2 {
+      font-size: $title-h2;
+    }
+    h3 {
+      font-size: $title-h1;
     }
   }
 
@@ -107,5 +128,17 @@
     .group dd {
       text-align: center;
       white-space: normal;
+    }
+    .group h3 {
+      font-size: $title-h3;
+    }
+
+    .fhead {
+      font-size: $title-h3;
+      line-height: 1.5;
+      color: #8b3f2f;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 1rem;
     }
   }

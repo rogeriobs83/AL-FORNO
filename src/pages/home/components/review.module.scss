@@ -3,14 +3,14 @@
 /* Reviews section */
 .review {
   padding: 4rem 0;
-  background-color: $background-secondary;
+  background-color: $background-ash;
   text-align: center;
   width: 100%;
   max-width: 1200px;
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: $title-h3;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -66,4 +66,25 @@
   margin-top: 0.5rem;
   font-weight: 600;
   color: $text-primary;
+}
+
+@media (max-width: 600px) {
+  .reviews {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.2rem;
+    .reviewCard {
+      background-color: $background-ash;
+      max-width: 100%;
+      padding: 1rem;
+    }
+    .reviewer {
+      position: static;
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+  }
+  .heading {
+    font-size: $title-h2;
+  }
 }

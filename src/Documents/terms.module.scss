@@ -20,11 +20,7 @@
 
   color: #9b2915;
 
-  font-size: 3rem;
-
   margin-bottom: 1rem;
-
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
 .terms > p {
@@ -39,13 +35,12 @@
 }
 
 .terms h2 {
+  font-size: $title-h2;
   text-align: center;
 
   color: $color-primary;
 
   margin-bottom: 1rem;
-
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
 .terms section p {

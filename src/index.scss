@@ -57,8 +57,9 @@
 
 /* Page layout */
 body {
-  background: $background-primary;
+  background: $background-ash;
   margin: 0;
+ 
 }
 
 #app {
@@ -75,30 +76,39 @@ body {
 
 /* Global typography */
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-family;
+}
+
+h1,
 h2 {
-  font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
 }
 
 h1 {
-  font-size: 56px;
+  font-size: $title-h1;
   letter-spacing: -1.68px;
   margin: 32px 0;
   @media (max-width: 1024px) {
-    font-size: 36px;
     margin: 20px 0;
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: $title-h2;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
 }
+
+h3 { font-size: $title-h3; }
+h4 { font-size: $title-h4; }
+h5 { font-size: $title-h5; }
+h6 { font-size: $title-h6; }
 p {
   margin: 0;
 }

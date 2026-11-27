@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as *;
+
 /* Reservation modal */
 .overlay {
 	position: fixed;
@@ -38,9 +40,8 @@
 }
 
 .title {
+	font-size: $title-h2;
 	margin: 0;
-	font-family: Georgia, 'Times New Roman', serif;
-	font-size: clamp(1.8rem, 6vw, 2.5rem);
 	font-weight: 500;
 	line-height: 1.15;
 }

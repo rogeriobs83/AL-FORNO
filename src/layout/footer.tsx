@@ -21,8 +21,8 @@ export function Footer() {
     <div className={Styles.footer__links}>
       <div className={Styles.footer__column}>
         <h4>Contact</h4>
-        <a href="tel:+442087808888">Phone</a>
-        <a href="mailto:info@alforno.co.uk">Email</a>
+        <a href="tel:+442088787522">Phone</a>
+        <a href="mailto:Alfornoinputney@gmail.com">Email</a>
       </div>
 
       <div className={Styles.footer__column}>

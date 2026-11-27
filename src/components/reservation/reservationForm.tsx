@@ -45,13 +45,13 @@ Message:
 ${formData.message}
 `;
 
-    window.location.href = `mailto:info@alforno.co.uk?subject=${encodeURIComponent(
+    window.location.href = `mailto:Alfornoinputney@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
   };
 
   return (
-    <section className={styles.reservation}>
+    <section id='reservation' className={styles.reservation}>
       <div className={styles.container}>
         <h2>Reserve a Table</h2>
 

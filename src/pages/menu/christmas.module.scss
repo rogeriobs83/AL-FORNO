@@ -76,8 +76,6 @@
   background-clip: text;
   color: transparent;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.35));
-  font-family: 'Cinzel', serif;
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1.15;
@@ -134,9 +132,7 @@
 }
 
 .categoryBadge {
-  position: absolute;
-  top: -1rem;
-  left: 2rem;
+  display: inline-block;
   padding: 0.25rem 1.5rem;
   border: 1px solid rgba(191, 149, 63, 0.4);
   border-radius: 9999px;
@@ -144,10 +140,9 @@
 }
 
 .categoryTitle {
+  font-size: $title-h2;
   margin: 0;
   color: #fcf6ba;
-  font-family: 'Cinzel', serif;
-  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -223,8 +218,6 @@
 .itemName {
   margin: 0 0 0.5rem;
   color: #203d32;
-  font-family: 'Cinzel', serif;
-  font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.4;
   transition: color 0.2s ease;
@@ -373,14 +366,6 @@
   .categorySection {
     padding: 2.5rem;
   }
-
-  .categoryTitle {
-    font-size: 1rem;
-  }
-
-  .itemName {
-    font-size: 1.25rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -438,7 +423,6 @@
   .title {
     width: 100%;
     border-bottom: 1px solid #f0f4f2;
-    font-size: 1.5rem;
   }
 
   .subtitle {
@@ -449,10 +433,6 @@
   .price {
     width: 100%;
     font-size: 0.8rem;
-  }
-
-  .categoryBadge {
-    left: 1rem;
   }
 
   .categorySection {

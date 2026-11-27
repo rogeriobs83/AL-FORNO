@@ -20,7 +20,7 @@ export const Menu: FunctionalComponent<MenuProps> = () => {
       description:
         "Indulge in our delectable Italian desserts, made to perfection.",
       image: "/2.webp",
-      link: "/DESSERTS.pdf",
+      link: "/dolci.pdf",
     },
     {
       title: "Drinks & Cocktails",

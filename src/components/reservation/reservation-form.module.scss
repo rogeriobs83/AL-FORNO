@@ -1,16 +1,24 @@
+@use "../../styles/variables.scss" as *;
+
 .reservation {
   padding: 6rem 2rem;
-
-  background: #f8f5f0;
+  border-radius: 12px;
+  background: none;
+  margin: 2rem 0;
+  inline-size: 100%;
+  max-inline-size: 1200px;
+  box-shadow: 0 0 3px rgba(45, 41, 38, 0.3);
+  border: 1px solid rgba(45, 41, 38, 0.3);
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-
+  
   text-align: center;
 
   h2 {
+    font-size: $title-h3;
     color: #9b2915;
     margin-bottom: 1rem;
   }
@@ -43,7 +51,7 @@ textarea {
 
   border: 1px solid #ddd;
 
-  border-radius: 8px;
+  border-radius: 12px;
 
   font-size: 1rem;
 
@@ -98,7 +106,23 @@ input[type="date"],
 input[type="time"] {
   font-family: inherit;
 }
-
+@media (max-width: 1200px) {
+   .reservation {
+    background-color: $background-ash;
+    padding: 2rem 1rem;
+    max-inline-size: 100%;
+    inline-size: 100%;
+    border: none;
+    box-shadow: none;
+  }
+  .container {
+    box-shadow: 0 0 3px rgba(45, 41, 38, 0.3);
+    padding: 1rem;
+    margin: 0 2px;
+    border: 1px solid rgba(45, 41, 38, 0.3);
+    border-radius: 8px;
+  }
+}
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -107,6 +131,23 @@ input[type="time"] {
   input[type="date"],
   input[type="time"] {
     width: 100%;
+  }
+  .container h2{
+    font-size: $title-h2;
+  }
+  .reservation {
+    background-color: $background-ash;
+    padding: 2rem 1rem;
+    max-inline-size: 100%;
+    inline-size: 100%;
+   border: none;
+  }
+  .container {
+    box-shadow: 0 0 3px rgba(45, 41, 38, 0.3);
+    padding: 1rem;
+    margin: 0 2px;
+    border: 1px solid rgba(45, 41, 38, 0.3);
+    border-radius: 8px;
   }
 }
 

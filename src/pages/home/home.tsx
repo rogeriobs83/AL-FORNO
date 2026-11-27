@@ -22,12 +22,7 @@ export const Home: FunctionalComponent<HomeProps> = () => {
     <>
       <div className={styles.home_container}>
         <Hero />
-        <About
-          title="About Us"
-          text="Welcome to Al Forno Putney, where passion for authentic Italian cuisine meets warm, welcoming hospitality. Every dish we serve is crafted with the finest ingredients, inspired by traditional recipes, and infused with a modern touch. Whether you're here for a casual meal, a special celebration, or a quick escape to Italy, we aim to make every visit memorable. At the heart of everything we do is a love for great food, shared moments, and creating an experience that keeps you coming back for more. Benvenuti—we can’t wait to serve you!"
-          imageSrc="/Sombra.svg"
-          imageAlt="Imagem do resturante"
-        />
+        <About />
         <Special />
         <Times />
         <Contact />
